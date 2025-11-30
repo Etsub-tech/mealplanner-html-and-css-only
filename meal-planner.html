@@ -6,207 +6,23 @@
     <title>NutriAI Meal Planner</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Quicksand', sans-serif;
-            padding-left: 15px;
-            color: rgb(61, 61, 61);
-            margin: 0px;
-        }
-
-        h1 { font-size: 50px; }
-        p { font-size: 19px; }
-
-        /* Desktop Navigation */
-        .navigationBarPhone { display: none; }
-
-        .navigationBar {
-            display: flex;
-            justify-content: space-between;
-            box-shadow: 0 5px 5px rgb(186, 185, 185);
-            margin-bottom: 5px;
-            background-color: white;
-            position: fixed;
-            padding: 15px 50px;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 10;
-        }
-
-        .right {
-            display: flex;
-            gap: 20px;
-        }
-
-        .saladImg {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        .navigationButtons,
-        .navigationButtons-mealplanner {
-            background-color: white;
-            border: none;
-            padding: 13px;
-            border-radius: 13px;
-            font-size: 15px;
-        }
-
-        .navigationButtons-mealplanner {
-            background-color: rgb(212, 255, 212);
-            color: rgb(29, 120, 4);
-        }
-
-        .navigationButtons:hover {
-            background-color: rgb(232, 232, 232);
-        }
-
-        .first {
-            margin-top: 120px;
-            box-shadow: 0px 0px 20px rgb(236, 236, 236);
-            padding: 100px;
-            margin: 30px;
-            border-radius: 15px;
-            margin-bottom: 150px;
-        }
-
-        .inputs {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 60px;
-        }
-
-        .each-input {
-            width: 100%;
-            height: 50px;
-            border-radius: 8px;
-            border: 1px solid rgb(200, 200, 200);
-            padding-left: 10px;
-            font-size: 16px;
-        }
-
-        .generate-button {
-            margin-top: 20px;
-            background-color: green;
-            padding: 20px;
-            border: none;
-            border-radius: 35px;
-            color: white;
-            font-size: 16px;
-        }
-
-        .generate-button:hover {
-            background-color: rgb(12, 102, 12);
-        }
-
-        .mealplans {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 50px;
-            padding: 30px;
-        }
-
-        .each-meal-plan {
-            box-shadow: 0px 0px 15px rgb(221, 221, 221);
-            padding: 30px;
-            border-radius: 15px;
-        }
-
-        footer {
-            background-color: rgb(162, 182, 156);
-            padding: 50px;
-        }
-
-        .very-bottom {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 300px;
-            padding-left: 50px;
-        }
-
-
-        .foods {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        .foods > div {
-            width: 30%;   
-        }
-
-        .days-image {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 10px;
-        }
-
-        .each-foods{
-            padding: 20px;
-            box-shadow: 0px 0px 30px rgb(242, 241, 241);
-            border-radius: 20px;
-        }
-
-        @media(max-width:1000px){
-            .navigationBar { display: none; }
-
-            .navigationBarPhone {
-                display: flex;
-                justify-content: space-between;
-                box-shadow: 4px 4px 8px rgb(192, 192, 192);
-                padding: 10px 30px;
-                background-color: white;
-                position: fixed;
-                top: 0; left: 0; right: 0;
-                z-index: 10;
-            }
-
-            .humburger { width: 30px; height: 30px; }
-            .humburgerButton { background-color: white; border: none; }
-
-            .inputs {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .very-bottom {
-                display: flex;
-                flex-direction: column;
-                row-gap: 30px;
-                padding-left: 0px;
-            }
-
-            .foods{
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .foods > div{
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="page.css">
+    
 
 </head>
 
 <body>
     <div class="navigationBar">
-        <img class="saladImg" src="pics/Screenshot 2025-11-16 004429.png">
-        <div style="color: green; margin-left:-900px; margin-top:15px;">NutriAI</div>
+        <div class="left">
+            <img class="saladImg" src="pics/Screenshot 2025-11-16 004429.png">
+            <div style="color: green;; margin-top:15px;">NutriAI</div>
+        </div>
 
         <div class="right">
-            <button class="navigationButtons">Home</button>
-            <button class="navigationButtons-mealplanner">Meal Planner</button>
-            <button class="navigationButtons">Chat with AI</button>
-            <button class="navigationButtons">Saved Plans</button>
+        <div><a href="homepage.html" class="navigationButtons">Home</a></div>
+        <div><a class="navigationButtons-mealplanner">Meal Planner</a></div>
+        <div><a href="chat-with-ai.html" class="navigationButtons">Chat with AI</a></div>
+        <div><a href="saved-plans.html" class="navigationButtons">Saved Plans</a></div>
         </div>
     </div>
 
@@ -244,7 +60,7 @@
         <button class="generate-button">Generate Meal Plan</button>
     </div>
 
-    <h1>Your 7-Day Meal Plan</h1>
+    <h1 style="margin-left: 20px;">Your 7-Day Meal Plan</h1>
     <div class="mealplans">
 
     <div class="each-meal-plan">
