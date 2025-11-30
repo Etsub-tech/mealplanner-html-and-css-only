@@ -231,6 +231,7 @@ footer {
 }
 
 .startPlannign {
+    text-decoration: none;
     background-color: rgb(15, 120, 15);
     border: none;
     padding: 20px 50px;
@@ -249,6 +250,7 @@ footer {
 }
 
 .chatwithai {
+    text-decoration: none;
     border: 2px solid rgb(15, 120, 15);
     padding: 20px 50px;
     border-radius: 50px;
@@ -345,6 +347,8 @@ h4 {
     transform: scale(1.05);
 }
 
+
+
 @media (max-width: 1000px) {
 
     .navigationBar {
@@ -375,7 +379,7 @@ h4 {
         border: none;
     }
 
-    /*meal planner */
+/*meal planner */
     .inputs {
         flex-direction: column;
         display: flex;
@@ -399,9 +403,13 @@ h4 {
     /*home page */
     .firstPage {
         flex-direction: column;
+        
     }
-
+    .two-buttons{
+        display: grid;
+    }
     .firstImage {
+        margin-top: 40px;
         width: 100%;
         height: auto;
     }
@@ -419,5 +427,12 @@ h4 {
     /* Saved plans mobile */
     .list {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1500px){
+    .two-buttons{
+        display: grid;
+        gap: 15px;
     }
 }
