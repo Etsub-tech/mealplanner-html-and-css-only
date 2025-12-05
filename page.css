@@ -274,6 +274,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+    padding: 0 50px;
 }
 
 .each-row-boxes {
@@ -358,76 +359,292 @@ h4 {
     .navigationBarPhone {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         box-shadow: 4px 4px 8px rgb(192, 192, 192);
-        padding: 10px 30px;
+        padding: 10px 20px;
         background-color: white;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 10;
+        height: 60px;
     }
+
+   
 
     .humburger {
         width: 30px;
         height: 30px;
-        margin-top: 20px;
     }
 
     .humburgerButton {
         background-color: white;
         border: none;
+        padding: 5px;
+        cursor: pointer;
     }
 
-/*meal planner */
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /*meal planner */
+    .first {
+        margin-top: 80px;
+        padding: 30px 20px;
+        margin: 20px 15px;
+        margin-bottom: 50px;
+    }
+
     .inputs {
         flex-direction: column;
         display: flex;
         gap: 20px;
     }
 
+    .each-input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .generate-button {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .mealplans {
+        padding: 15px;
+        gap: 30px;
+    }
+
+    .each-meal-plan {
+        padding: 20px;
+    }
+
     .foods {
         flex-direction: column;
+        gap: 15px;
     }
 
     .foods > div {
         width: 100%;
     }
 
+    .days-image {
+        height: 200px;
+    }
+
+/* Chat with ai*/
+    .chat-body {
+        padding: 0 15px;
+    }
+
+    .ai-chat-container {
+        width: 100%;
+        margin: 80px 0;
+        padding: 20px;
+        padding-bottom: 80px;
+        box-sizing: border-box;
+    }
+
+    .chatBody {
+        height: 300px;
+        overflow-y: auto;
+    }
+
+    .chatBody img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chat-input {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .chat-input input {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .chat-input img {
+        height: 50px;
+        width: 50px;
+        margin-top: 0;
+        align-self: flex-end;
+    }
+
+    .ai-chat-container h1 {
+        font-size: 24px;
+        display: block;
+        margin-left: 0;
+    }
+
+    .ai-chat-container > img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .ai-chat-container p {
+        margin-left: 0;
+        margin-top: -10px;
+    }
+
     .very-bottom {
         display: grid;
         grid-template-columns: 1fr;
         padding-left: 0;
+        gap: 30px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 30px 20px;
     }
 
     /*home page */
     .firstPage {
         flex-direction: column;
-        
+        padding: 20px;
+        padding-top: 80px;
     }
-    .two-buttons{
+
+    .firstPage > div:first-child {
+        text-align: center;
+    }
+
+    .firstPage h1 {
+        font-size: 28px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .firstPage h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .two-buttons {
+        display: grid;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .startPlannign,
+    .chatwithai {
+        padding: 18px 40px;
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .firstImage {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .everything {
+        margin: 50px 20px;
+        padding: 0 15px;
+    }
+
+    .everything h1 {
+        font-size: 28px;
+    }
+
+    .everything h3 {
+        font-size: 16px;
+    }
+
+    .row-boxes {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
         display: grid;
     }
-    .firstImage {
-        margin-top: 40px;
+
+    .each-row-boxes {
+        padding: 25px;
+    }
+
+    .each-row-boxes img {
         width: 100%;
         height: auto;
     }
 
-    .guide {
-        flex-direction: column;
-        gap: 30px;
+    .how-it-works {
+        margin-top: 80px;
+        padding-top: 50px;
+        padding: 0 20px;
     }
 
-    .row-boxes {
-        flex-direction: column;
+    .how-it-works h1 {
+        font-size: 28px;
+    }
+
+    .how-it-works p {
+        font-size: 16px;
+    }
+
+    .guide {
+        grid-template-columns: 1fr;
         gap: 40px;
+        padding: 0 20px;
+        padding-bottom: 80px;
+    }
+
+    .guide-each {
+        text-align: center;
+    }
+
+    .ready {
+        padding: 50px 20px;
+        padding-bottom: 100px;
+    }
+
+    .ready h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .ready p {
+        font-size: 16px;
+        text-align: center;
+        margin-top: -20px;
     }
 
     /* Saved plans mobile */
     .list {
         grid-template-columns: 1fr;
+        padding: 15px;
+        margin: 10px;
+        gap: 25px;
     }
+
+    .eachList {
+        padding: 25px;
+        margin-bottom: 0;
+    }
+
+    .eachList img {
+        width: 100%;
+        height: auto;
+    }
+
+
 }
 
 @media (max-width: 1500px){
@@ -532,12 +749,192 @@ label {
 @media (max-width: 600px) {
     .auth-container,
     .logout-box {
-        width: 85%;
-        padding: 30px;
+        width: 90%;
+        padding: 30px 20px;
+        margin: 100px auto;
+        box-sizing: border-box;
+    }
+
+    .auth-container {
+        padding-right: 20px;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .navigationBarPhone {
+        padding: 8px 15px;
+    }
+
+    .saladImg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .firstPage {
+        padding: 15px;
+        padding-top: 70px;
+    }
+
+    .firstPage h1 {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    .firstPage h3 {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .startPlannign,
+    .chatwithai {
+        padding: 15px 30px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    .everything {
+        margin: 40px 15px;
+        padding: 0 10px;
+    }
+
+    .everything h1 {
+        font-size: 24px;
+    }
+
+    .everything h3 {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .row-boxes {
+        padding: 0 15px;
+        gap: 25px;
+    }
+
+    .each-row-boxes {
+        padding: 20px;
+    }
+
+    .how-it-works {
+        margin-top: 60px;
+        padding-top: 40px;
+        padding: 0 15px;
+    }
+
+    .how-it-works h1 {
+        font-size: 24px;
+    }
+
+    .how-it-works p {
+        font-size: 14px;
+    }
+
+    .guide {
+        padding: 0 15px;
+        gap: 30px;
+    }
+
+    .ready {
+        padding: 40px 15px;
+        padding-bottom: 80px;
+    }
+
+    .ready h1 {
+        font-size: 24px;
+    }
+
+    .ready p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .ai-chat-container {
+        margin: 70px 0;
+        padding: 15px;
+    }
+
+    .ai-chat-container h1 {
+        font-size: 20px;
+    }
+
+    .chatBody {
+        height: 250px;
+    }
+
+    .first {
+        padding: 25px 15px;
+        margin: 15px 10px;
+    }
+
+    .first h2 {
+        font-size: 22px;
+    }
+
+    .mealplans {
+        padding: 10px;
+        gap: 25px;
+    }
+
+    .each-meal-plan {
+        padding: 15px;
+    }
+
+    .each-meal-plan h3 {
+        font-size: 20px;
+    }
+
+    .days-image {
+        height: 180px;
+    }
+
+    .list {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .eachList {
+        padding: 20px;
+    }
+
+    .eachList h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    .very-bottom {
+        gap: 25px;
+    }
+
+    .very-bottom h2 {
+        font-size: 20px;
+    }
+
+    .very-bottom p {
+        font-size: 14px;
+    }
+
+    div[style*="margin-top:120px"] {
+        margin-top: 70px !important;
+        padding: 0 15px;
+    }
+
+    div[style*="margin-top:120px"] h1 {
+        font-size: 24px;
+    }
+
+    div[style*="margin-top:120px"] p {
+        font-size: 14px;
     }
 }
 
