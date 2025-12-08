@@ -747,9 +747,11 @@ label {
 }
 
 @media (max-width: 600px) {
-    .auth-container,
-    .logout-box {
-        width: 90%;
+    .auth-input {
+        width: 85%;
+    }
+    .auth-container{
+        width: 85%;
         padding: 30px 20px;
         margin: 100px auto;
         box-sizing: border-box;
